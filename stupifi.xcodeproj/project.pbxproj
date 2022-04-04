@@ -7,15 +7,55 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		965582FF27F7195F00612BA4 /* Jost-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 965582ED27F7195D00612BA4 /* Jost-BoldItalic.ttf */; };
+		9655830027F7195F00612BA4 /* Jost-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 965582EE27F7195D00612BA4 /* Jost-Bold.ttf */; };
+		9655830127F7195F00612BA4 /* Jost-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 965582EF27F7195D00612BA4 /* Jost-ExtraBoldItalic.ttf */; };
+		9655830227F7195F00612BA4 /* Jost-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 965582F027F7195D00612BA4 /* Jost-Italic.ttf */; };
+		9655830327F7195F00612BA4 /* Jost-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 965582F127F7195E00612BA4 /* Jost-ExtraBold.ttf */; };
+		9655830427F7195F00612BA4 /* Jost-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 965582F227F7195E00612BA4 /* Jost-Light.ttf */; };
+		9655830527F7195F00612BA4 /* Jost-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 965582F327F7195E00612BA4 /* Jost-ExtraLight.ttf */; };
+		9655830627F7195F00612BA4 /* Jost-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 965582F427F7195E00612BA4 /* Jost-SemiBoldItalic.ttf */; };
+		9655830727F7195F00612BA4 /* Jost-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 965582F527F7195E00612BA4 /* Jost-Regular.ttf */; };
+		9655830827F7195F00612BA4 /* Jost-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 965582F627F7195E00612BA4 /* Jost-ThinItalic.ttf */; };
+		9655830927F7195F00612BA4 /* Jost-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 965582F727F7195E00612BA4 /* Jost-Black.ttf */; };
+		9655830A27F7195F00612BA4 /* Jost-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 965582F827F7195E00612BA4 /* Jost-MediumItalic.ttf */; };
+		9655830B27F7195F00612BA4 /* Jost-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 965582F927F7195E00612BA4 /* Jost-BlackItalic.ttf */; };
+		9655830C27F7195F00612BA4 /* Jost-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 965582FA27F7195F00612BA4 /* Jost-Medium.ttf */; };
+		9655830D27F7195F00612BA4 /* Jost-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 965582FB27F7195F00612BA4 /* Jost-SemiBold.ttf */; };
+		9655830E27F7195F00612BA4 /* Jost-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 965582FC27F7195F00612BA4 /* Jost-LightItalic.ttf */; };
+		9655830F27F7195F00612BA4 /* Jost-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 965582FD27F7195F00612BA4 /* Jost-Thin.ttf */; };
+		9655831027F7195F00612BA4 /* Jost-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 965582FE27F7195F00612BA4 /* Jost-ExtraLightItalic.ttf */; };
 		9678639F27F4F08400FB1D89 /* stupifiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9678639E27F4F08400FB1D89 /* stupifiApp.swift */; };
 		967863A127F4F08400FB1D89 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967863A027F4F08400FB1D89 /* ContentView.swift */; };
 		967863A327F4F08C00FB1D89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 967863A227F4F08C00FB1D89 /* Assets.xcassets */; };
 		967863A627F4F08C00FB1D89 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 967863A527F4F08C00FB1D89 /* Preview Assets.xcassets */; };
 		967863A827F4F08C00FB1D89 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967863A727F4F08C00FB1D89 /* Persistence.swift */; };
 		967863AB27F4F08C00FB1D89 /* stupifi.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 967863A927F4F08C00FB1D89 /* stupifi.xcdatamodeld */; };
+		968A94CC27F77CA600F8DF55 /* NFCHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968A94CB27F77CA600F8DF55 /* NFCHelper.swift */; };
+		968A94CE27F8778400F8DF55 /* NFCTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968A94CD27F8778300F8DF55 /* NFCTypes.swift */; };
+		96F9DDDC27F630C000F60FAF /* MyColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F9DDDB27F630BF00F60FAF /* MyColors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		965582ED27F7195D00612BA4 /* Jost-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jost-BoldItalic.ttf"; sourceTree = "<group>"; };
+		965582EE27F7195D00612BA4 /* Jost-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jost-Bold.ttf"; sourceTree = "<group>"; };
+		965582EF27F7195D00612BA4 /* Jost-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jost-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		965582F027F7195D00612BA4 /* Jost-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jost-Italic.ttf"; sourceTree = "<group>"; };
+		965582F127F7195E00612BA4 /* Jost-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jost-ExtraBold.ttf"; sourceTree = "<group>"; };
+		965582F227F7195E00612BA4 /* Jost-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jost-Light.ttf"; sourceTree = "<group>"; };
+		965582F327F7195E00612BA4 /* Jost-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jost-ExtraLight.ttf"; sourceTree = "<group>"; };
+		965582F427F7195E00612BA4 /* Jost-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jost-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		965582F527F7195E00612BA4 /* Jost-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jost-Regular.ttf"; sourceTree = "<group>"; };
+		965582F627F7195E00612BA4 /* Jost-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jost-ThinItalic.ttf"; sourceTree = "<group>"; };
+		965582F727F7195E00612BA4 /* Jost-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jost-Black.ttf"; sourceTree = "<group>"; };
+		965582F827F7195E00612BA4 /* Jost-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jost-MediumItalic.ttf"; sourceTree = "<group>"; };
+		965582F927F7195E00612BA4 /* Jost-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jost-BlackItalic.ttf"; sourceTree = "<group>"; };
+		965582FA27F7195F00612BA4 /* Jost-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jost-Medium.ttf"; sourceTree = "<group>"; };
+		965582FB27F7195F00612BA4 /* Jost-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jost-SemiBold.ttf"; sourceTree = "<group>"; };
+		965582FC27F7195F00612BA4 /* Jost-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jost-LightItalic.ttf"; sourceTree = "<group>"; };
+		965582FD27F7195F00612BA4 /* Jost-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jost-Thin.ttf"; sourceTree = "<group>"; };
+		965582FE27F7195F00612BA4 /* Jost-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jost-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		9655831127F719DF00612BA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		9678639B27F4F08400FB1D89 /* stupifi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = stupifi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9678639E27F4F08400FB1D89 /* stupifiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stupifiApp.swift; sourceTree = "<group>"; };
 		967863A027F4F08400FB1D89 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -23,6 +63,10 @@
 		967863A527F4F08C00FB1D89 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		967863A727F4F08C00FB1D89 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		967863AA27F4F08C00FB1D89 /* stupifi.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = stupifi.xcdatamodel; sourceTree = "<group>"; };
+		968A94CA27F77ABB00F8DF55 /* stupifi.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = stupifi.entitlements; sourceTree = "<group>"; };
+		968A94CB27F77CA600F8DF55 /* NFCHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCHelper.swift; sourceTree = "<group>"; };
+		968A94CD27F8778300F8DF55 /* NFCTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCTypes.swift; sourceTree = "<group>"; };
+		96F9DDDB27F630BF00F60FAF /* MyColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyColors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +80,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		965582EB27F7193500612BA4 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				965582F727F7195E00612BA4 /* Jost-Black.ttf */,
+				965582F927F7195E00612BA4 /* Jost-BlackItalic.ttf */,
+				965582EE27F7195D00612BA4 /* Jost-Bold.ttf */,
+				965582ED27F7195D00612BA4 /* Jost-BoldItalic.ttf */,
+				965582F127F7195E00612BA4 /* Jost-ExtraBold.ttf */,
+				965582EF27F7195D00612BA4 /* Jost-ExtraBoldItalic.ttf */,
+				965582F327F7195E00612BA4 /* Jost-ExtraLight.ttf */,
+				965582FE27F7195F00612BA4 /* Jost-ExtraLightItalic.ttf */,
+				965582F027F7195D00612BA4 /* Jost-Italic.ttf */,
+				965582F227F7195E00612BA4 /* Jost-Light.ttf */,
+				965582FC27F7195F00612BA4 /* Jost-LightItalic.ttf */,
+				965582FA27F7195F00612BA4 /* Jost-Medium.ttf */,
+				965582F827F7195E00612BA4 /* Jost-MediumItalic.ttf */,
+				965582F527F7195E00612BA4 /* Jost-Regular.ttf */,
+				965582FB27F7195F00612BA4 /* Jost-SemiBold.ttf */,
+				965582F427F7195E00612BA4 /* Jost-SemiBoldItalic.ttf */,
+				965582FD27F7195F00612BA4 /* Jost-Thin.ttf */,
+				965582F627F7195E00612BA4 /* Jost-ThinItalic.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		965582EC27F7193E00612BA4 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				965582EB27F7193500612BA4 /* Fonts */,
+				967863A227F4F08C00FB1D89 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 		9678639227F4F08300FB1D89 = {
 			isa = PBXGroup;
 			children = (
@@ -55,12 +133,17 @@
 		9678639D27F4F08400FB1D89 /* stupifi */ = {
 			isa = PBXGroup;
 			children = (
+				968A94CA27F77ABB00F8DF55 /* stupifi.entitlements */,
+				9655831127F719DF00612BA4 /* Info.plist */,
 				9678639E27F4F08400FB1D89 /* stupifiApp.swift */,
 				967863A027F4F08400FB1D89 /* ContentView.swift */,
-				967863A227F4F08C00FB1D89 /* Assets.xcassets */,
+				965582EC27F7193E00612BA4 /* Assets */,
 				967863A727F4F08C00FB1D89 /* Persistence.swift */,
 				967863A927F4F08C00FB1D89 /* stupifi.xcdatamodeld */,
 				967863A427F4F08C00FB1D89 /* Preview Content */,
+				96F9DDDB27F630BF00F60FAF /* MyColors.swift */,
+				968A94CB27F77CA600F8DF55 /* NFCHelper.swift */,
+				968A94CD27F8778300F8DF55 /* NFCTypes.swift */,
 			);
 			path = stupifi;
 			sourceTree = "<group>";
@@ -131,8 +214,26 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9655830327F7195F00612BA4 /* Jost-ExtraBold.ttf in Resources */,
+				9655830827F7195F00612BA4 /* Jost-ThinItalic.ttf in Resources */,
+				9655830227F7195F00612BA4 /* Jost-Italic.ttf in Resources */,
+				965582FF27F7195F00612BA4 /* Jost-BoldItalic.ttf in Resources */,
+				9655830B27F7195F00612BA4 /* Jost-BlackItalic.ttf in Resources */,
+				9655830927F7195F00612BA4 /* Jost-Black.ttf in Resources */,
+				9655830527F7195F00612BA4 /* Jost-ExtraLight.ttf in Resources */,
 				967863A627F4F08C00FB1D89 /* Preview Assets.xcassets in Resources */,
+				9655830627F7195F00612BA4 /* Jost-SemiBoldItalic.ttf in Resources */,
+				9655830E27F7195F00612BA4 /* Jost-LightItalic.ttf in Resources */,
+				9655830C27F7195F00612BA4 /* Jost-Medium.ttf in Resources */,
+				9655830D27F7195F00612BA4 /* Jost-SemiBold.ttf in Resources */,
+				9655831027F7195F00612BA4 /* Jost-ExtraLightItalic.ttf in Resources */,
+				9655830127F7195F00612BA4 /* Jost-ExtraBoldItalic.ttf in Resources */,
+				9655830727F7195F00612BA4 /* Jost-Regular.ttf in Resources */,
+				9655830F27F7195F00612BA4 /* Jost-Thin.ttf in Resources */,
 				967863A327F4F08C00FB1D89 /* Assets.xcassets in Resources */,
+				9655830027F7195F00612BA4 /* Jost-Bold.ttf in Resources */,
+				9655830427F7195F00612BA4 /* Jost-Light.ttf in Resources */,
+				9655830A27F7195F00612BA4 /* Jost-MediumItalic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +244,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				968A94CE27F8778400F8DF55 /* NFCTypes.swift in Sources */,
+				96F9DDDC27F630C000F60FAF /* MyColors.swift in Sources */,
+				968A94CC27F77CA600F8DF55 /* NFCHelper.swift in Sources */,
 				967863AB27F4F08C00FB1D89 /* stupifi.xcdatamodeld in Sources */,
 				967863A827F4F08C00FB1D89 /* Persistence.swift in Sources */,
 				967863A127F4F08400FB1D89 /* ContentView.swift in Sources */,
@@ -274,12 +378,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = stupifi/stupifi.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"stupifi/Preview Content\"";
 				DEVELOPMENT_TEAM = DLG7YMAG67;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = stupifi/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -304,12 +410,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = stupifi/stupifi.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"stupifi/Preview Content\"";
 				DEVELOPMENT_TEAM = DLG7YMAG67;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = stupifi/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

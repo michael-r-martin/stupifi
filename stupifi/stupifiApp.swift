@@ -8,6 +8,7 @@
 import SwiftUI
 
 @main
+@available(iOS 15.0, *)
 struct stupifiApp: App {
     let persistenceController = PersistenceController.shared
 
@@ -15,6 +16,7 @@ struct stupifiApp: App {
         WindowGroup {
             ContentView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
+                .environmentObject(AppSettings())
         }
     }
 }
