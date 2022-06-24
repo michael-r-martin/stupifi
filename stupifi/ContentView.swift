@@ -15,11 +15,12 @@ struct ContentView: View, BalanceFetchDelegate {
     @State private var yAngle = Angle.zero
     @State private var translationX = 0.0
     
-    @State private var darkModeEnabled = false
+    @State private var darkModeEnabled = true
     
     @State private var balance = "0.00"
     
-    @Binding var walletAddress: String
+    @State private var walletAddress = ""
+    @State private var showAddressField = false
     
     @EnvironmentObject var settings: AppSettings
     
@@ -34,7 +35,25 @@ struct ContentView: View, BalanceFetchDelegate {
             Spacer()
             
             TextField("Address/ENS", text: $walletAddress)
-            
+                .multilineTextAlignment(.center)
+                .disableAutocorrection(true)
+                .autocapitalization(.none)
+                .font(Font.custom("Jost-SemiBold", fixedSize: 20))
+                .foregroundColor(settings.darkModeTextColor)
+                .frame(width: 280, height: 50, alignment: .center)
+                .overlay(
+                    RoundedRectangle(cornerRadius: 20, style: .continuous)
+                        .stroke(LinearGradient(colors: [.pink, .purple, .blue, .green], startPoint: .topLeading, endPoint: .bottomTrailing), lineWidth: 2)
+                )
+                .padding(.bottom)
+                .onTapGesture(perform: {
+                    walletAddress = ""
+                })
+                .onSubmit {
+                    UserDefaults.standard.set(walletAddress, forKey: "walletAddress")
+                    self.balanceFetcher.fetchBalance(walletAddressOrENS: walletAddress)
+                }
+                
             ZStack {
                 RoundedRectangle(cornerRadius: 36, style: .continuous)
                     .fill(LinearGradient(colors: [.pink, .purple, .blue, .green], startPoint: .topLeading, endPoint: .bottomTrailing))
@@ -105,7 +124,9 @@ struct ContentView: View, BalanceFetchDelegate {
                 
                 balanceFetcher.delegate = self
                 
-                balanceFetcher.fetchBalance(walletAddressOrENS: "0x08df2d9356A9F693287024C01119C5d49195C559")
+                let balance = UserDefaults.standard.string(forKey: "walletAddress")
+                
+                balanceFetcher.fetchBalance(walletAddressOrENS: balance)
             }
     }
     
@@ -153,8 +174,8 @@ struct DebitCard: View {
 }
 
 class AppSettings: ObservableObject {
-    @Published var darkModeBackground = Color.white
-    @Published var darkModeTextColor = Color.darkGray
+    @Published var darkModeBackground = Color.darkGray
+    @Published var darkModeTextColor = Color.white
 }
 
 @available(iOS 15.0, *)
@@ -169,7 +190,7 @@ struct ContentView_Previews: PreviewProvider {
 struct Toolbar: View, CustomNFCDelegate {
     
     @Binding var xAngle: Angle
-    @State private var darkModeEnabled = false
+    @State private var darkModeEnabled = true
     @State private var darkModeButtonRotation = Angle.zero
     
     @EnvironmentObject var settings: AppSettings
@@ -240,21 +261,8 @@ struct Toolbar: View, CustomNFCDelegate {
                 )
                 .rotation3DEffect(darkModeButtonRotation, axis: (x: 0, y: 1, z: 0))
                 .animation(Animation.spring(response: 0.3, dampingFraction: 0.3, blendDuration: 0.3))
-            Button(action: {
-                nfcHelper.activateSession()
-            }) {
-                Image(systemName: "gearshape.fill")
-                    .padding()
-                    .foregroundColor(.white)
-                    .background(LinearGradient(colors: [.pink, .purple, .blue, .green], startPoint: .topLeading, endPoint: .bottomTrailing)).frame(height: 40)
-                    .clipShape(Circle())
-                    .font(Font.system(size: 16))
-            }
         }
         .padding()
-        .onAppear(perform: {
-            nfcHelper.delegate = self
-        })
     }
 }
 

@@ -23,7 +23,12 @@ class BalanceFetcher {
     
     var delegate: BalanceFetchDelegate?
     
-    func fetchBalance(walletAddressOrENS: String) {
+    func fetchBalance(walletAddressOrENS: String?) {
+        guard let walletAddressOrENS = walletAddressOrENS else {
+            print("no wallet address :/")
+            return
+        }
+        
         var urlComponents = URLComponents(string: "https://ioeth-7yo57vq7xq-nw.a.run.app")
         
         let sentDataQuery = URLQueryItem(name: "walletAddress", value: walletAddressOrENS)
@@ -81,7 +86,7 @@ class BalanceFetcher {
         
         let formattedBalance = String(format: "%.3f", balanceAsDouble)
         
-        let finalString = "\(formattedBalance) ETH"
+        let finalString = "\(formattedBalance) ETH 💎"
         
         return finalString
     }
