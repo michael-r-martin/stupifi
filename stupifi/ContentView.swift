@@ -19,6 +19,8 @@ struct ContentView: View, BalanceFetchDelegate {
     
     @State private var balance = "0.00"
     
+    @Binding var walletAddress: String
+    
     @EnvironmentObject var settings: AppSettings
     
     let nfcHelper = NFCHelper()
@@ -28,7 +30,10 @@ struct ContentView: View, BalanceFetchDelegate {
         
         VStack() {
             Spacer()
+            
             Spacer()
+            
+            TextField("Address/ENS", text: $walletAddress)
             
             ZStack {
                 RoundedRectangle(cornerRadius: 36, style: .continuous)
@@ -96,9 +101,11 @@ struct ContentView: View, BalanceFetchDelegate {
         }.background(settings.darkModeBackground).ignoresSafeArea()
             .environmentObject(settings)
             .onAppear {
+                print("running")
+                
                 balanceFetcher.delegate = self
                 
-                balanceFetcher.fetchBalance(walletAddressOrENS: "michaelheaven.eth")
+                balanceFetcher.fetchBalance(walletAddressOrENS: "0x08df2d9356A9F693287024C01119C5d49195C559")
             }
     }
     
@@ -191,7 +198,7 @@ struct Toolbar: View, CustomNFCDelegate {
             Button(action: {
                 xAngle += Angle(degrees: 180)
             }) {
-                Image(systemName: "arrow.forward")
+                Image(systemName: "arrow.forward.circle.fill")
                     .padding()
                     .foregroundColor(.white)
                     .background(LinearGradient(colors: [.pink, .purple, .blue, .green], startPoint: .topLeading, endPoint: .bottomTrailing)).frame(height: 40)
@@ -201,14 +208,14 @@ struct Toolbar: View, CustomNFCDelegate {
             Button(action: {
                 nfcHelper.activateSession()
             }) {
-                Image(systemName: "star")
+                Image(systemName: "star.fill")
                     .padding()
                     .foregroundColor(.white)
                     .background(LinearGradient(colors: [.pink, .purple, .blue, .green], startPoint: .topLeading, endPoint: .bottomTrailing)).frame(height: 40)
                     .clipShape(Circle())
                     .font(Font.system(size: 16))
             }
-            Image(systemName: "moon")
+            Image(systemName: "moon.fill")
                 .padding()
                 .foregroundColor(.white)
                 .background(LinearGradient(colors: [.pink, .purple, .blue, .green], startPoint: .topLeading, endPoint: .bottomTrailing)).frame(height: 40)
@@ -233,6 +240,16 @@ struct Toolbar: View, CustomNFCDelegate {
                 )
                 .rotation3DEffect(darkModeButtonRotation, axis: (x: 0, y: 1, z: 0))
                 .animation(Animation.spring(response: 0.3, dampingFraction: 0.3, blendDuration: 0.3))
+            Button(action: {
+                nfcHelper.activateSession()
+            }) {
+                Image(systemName: "gearshape.fill")
+                    .padding()
+                    .foregroundColor(.white)
+                    .background(LinearGradient(colors: [.pink, .purple, .blue, .green], startPoint: .topLeading, endPoint: .bottomTrailing)).frame(height: 40)
+                    .clipShape(Circle())
+                    .font(Font.system(size: 16))
+            }
         }
         .padding()
         .onAppear(perform: {

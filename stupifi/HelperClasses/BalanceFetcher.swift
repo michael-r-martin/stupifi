@@ -36,7 +36,9 @@ class BalanceFetcher {
         
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         
-        let serverTask = URLSession.shared.dataTask(with: request) { data, response, error in
+        let serverTask = URLSession.shared.dataTask(with: request) { [weak self] (data, response, error) in
+            guard let self = self else { return }
+            
             guard let data = data else {
                 print("no data available \(#line)")
                 
@@ -53,7 +55,9 @@ class BalanceFetcher {
                 return
             }
             
-            self.fetchedBalance = parsedResponse.balance
+            let formattedBalance = self.formatBalance(balance: parsedResponse.balance)
+            
+            self.fetchedBalance = formattedBalance
 
             self.delegate?.didAttemptFetch(success: true)
         }
@@ -70,6 +74,16 @@ class BalanceFetcher {
             
             return nil
         }
+    }
+    
+    func formatBalance(balance: String) -> String {
+        guard let balanceAsDouble = Double(balance) else { return "0.00" }
+        
+        let formattedBalance = String(format: "%.3f", balanceAsDouble)
+        
+        let finalString = "\(formattedBalance) ETH"
+        
+        return finalString
     }
     
 }
