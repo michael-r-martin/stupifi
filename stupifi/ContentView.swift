@@ -9,14 +9,20 @@ import SwiftUI
 import CoreData
 
 @available(iOS 15.0, *)
-struct ContentView: View {
+struct ContentView: View, BalanceFetchDelegate {
+    
     @State private var xAngle = Angle.zero
     @State private var yAngle = Angle.zero
     @State private var translationX = 0.0
+    
     @State private var darkModeEnabled = false
+    
+    @State private var balance = "0.00"
+    
     @EnvironmentObject var settings: AppSettings
     
     let nfcHelper = NFCHelper()
+    let balanceFetcher = BalanceFetcher()
     
     var body: some View {
         
@@ -31,7 +37,7 @@ struct ContentView: View {
                            height: 200,
                            alignment: .center)
                 
-                DebitCard(balance: "100,000", xAngle: xAngle, isFront: true)
+                DebitCard(balance: balance, xAngle: xAngle, isFront: true)
                     .frame(width: 294, height: 194, alignment: .center)
                     .rotation3DEffect(yAngle, axis: (x: 1, y: 0, z: 0), anchor: .center)
                     .rotation3DEffect(xAngle, axis: (x: 0, y: 1, z: 0), anchor: .center)
@@ -90,8 +96,14 @@ struct ContentView: View {
         }.background(settings.darkModeBackground).ignoresSafeArea()
             .environmentObject(settings)
             .onAppear {
+                balanceFetcher.delegate = self
                 
+                balanceFetcher.fetchBalance(walletAddressOrENS: "michaelheaven.eth")
             }
+    }
+    
+    func didAttemptFetch(success: Bool) {
+        self.balance = balanceFetcher.fetchedBalance
     }
 
 }

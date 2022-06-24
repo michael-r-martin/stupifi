@@ -31,6 +31,7 @@
 		967863A627F4F08C00FB1D89 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 967863A527F4F08C00FB1D89 /* Preview Assets.xcassets */; };
 		967863A827F4F08C00FB1D89 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967863A727F4F08C00FB1D89 /* Persistence.swift */; };
 		967863AB27F4F08C00FB1D89 /* stupifi.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 967863A927F4F08C00FB1D89 /* stupifi.xcdatamodeld */; };
+		9679CB262865C854008A789B /* BalanceFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9679CB252865C854008A789B /* BalanceFetcher.swift */; };
 		968A94CC27F77CA600F8DF55 /* NFCHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968A94CB27F77CA600F8DF55 /* NFCHelper.swift */; };
 		968A94CE27F8778400F8DF55 /* NFCTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968A94CD27F8778300F8DF55 /* NFCTypes.swift */; };
 		96F9DDDC27F630C000F60FAF /* MyColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F9DDDB27F630BF00F60FAF /* MyColors.swift */; };
@@ -63,6 +64,7 @@
 		967863A527F4F08C00FB1D89 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		967863A727F4F08C00FB1D89 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		967863AA27F4F08C00FB1D89 /* stupifi.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = stupifi.xcdatamodel; sourceTree = "<group>"; };
+		9679CB252865C854008A789B /* BalanceFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceFetcher.swift; sourceTree = "<group>"; };
 		968A94CA27F77ABB00F8DF55 /* stupifi.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = stupifi.entitlements; sourceTree = "<group>"; };
 		968A94CB27F77CA600F8DF55 /* NFCHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCHelper.swift; sourceTree = "<group>"; };
 		968A94CD27F8778300F8DF55 /* NFCTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCTypes.swift; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 		9678639D27F4F08400FB1D89 /* stupifi */ = {
 			isa = PBXGroup;
 			children = (
+				9679CB242865C839008A789B /* HelperClasses */,
 				968A94CA27F77ABB00F8DF55 /* stupifi.entitlements */,
 				9655831127F719DF00612BA4 /* Info.plist */,
 				9678639E27F4F08400FB1D89 /* stupifiApp.swift */,
@@ -142,7 +145,6 @@
 				967863A927F4F08C00FB1D89 /* stupifi.xcdatamodeld */,
 				967863A427F4F08C00FB1D89 /* Preview Content */,
 				96F9DDDB27F630BF00F60FAF /* MyColors.swift */,
-				968A94CB27F77CA600F8DF55 /* NFCHelper.swift */,
 				968A94CD27F8778300F8DF55 /* NFCTypes.swift */,
 			);
 			path = stupifi;
@@ -154,6 +156,15 @@
 				967863A527F4F08C00FB1D89 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9679CB242865C839008A789B /* HelperClasses */ = {
+			isa = PBXGroup;
+			children = (
+				968A94CB27F77CA600F8DF55 /* NFCHelper.swift */,
+				9679CB252865C854008A789B /* BalanceFetcher.swift */,
+			);
+			path = HelperClasses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,6 +261,7 @@
 				967863AB27F4F08C00FB1D89 /* stupifi.xcdatamodeld in Sources */,
 				967863A827F4F08C00FB1D89 /* Persistence.swift in Sources */,
 				967863A127F4F08400FB1D89 /* ContentView.swift in Sources */,
+				9679CB262865C854008A789B /* BalanceFetcher.swift in Sources */,
 				9678639F27F4F08400FB1D89 /* stupifiApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
